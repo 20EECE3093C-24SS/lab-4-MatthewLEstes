@@ -1,0 +1,26 @@
+name: Unit Test
+run-name: ${{ github.actor }} - Unit Test
+on: 
+  push:
+    branches:
+      - TODO-1
+    tags-ignore:
+      - TODO-2
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [TODO-3, TODO-4]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          TODO-5
+      - name: Test with pytest
+        run: TODO-6

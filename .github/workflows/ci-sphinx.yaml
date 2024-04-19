@@ -1,0 +1,31 @@
+name: Doc Generation
+run-name: ${{ github.actor }} - Docs
+on:
+  push:
+    tags:
+      - TODO-1
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: TODO-2
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          TODO-3
+      - name: Build HTML documentation
+        run: |
+          sphinx-apidoc -o docs/source/ sample/
+          cd docs
+          TODO-4
+          cd build
+          zip ../../api_docs.zip -r html/
+      - name: Upload html documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: apidocs
+          path: api_docs.zip
