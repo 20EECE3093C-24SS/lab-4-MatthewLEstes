@@ -1,4 +1,4 @@
-# 20EECE3093C - Lab 4
+# 20EECE3093C - Lab 4 - Matthew Estes
 
 [![unit test](https://github.com/20EECE3093C-24SS/lab-4-MatthewLEstes/actions/workflows/ci-pytest.yaml/badge.svg?event=push)](https://github.com/20EECE3093C-24SS/lab-4-MatthewLEstes/actions/workflows/ci-pytest.yaml)
 [![doc generation](https://github.com/20EECE3093C-24SS/lab-4-MatthewLEstes/actions/workflows/ci-sphinx.yaml/badge.svg?event=push)](https://github.com/20EECE3093C-24SS/lab-4-MatthewLEstes/actions/workflows/ci-sphinx.yaml)
